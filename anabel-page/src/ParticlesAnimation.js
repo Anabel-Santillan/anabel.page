@@ -1,5 +1,6 @@
-const canvas = document.getElementById("canvas1");
-const ctx = canvas.getContext("2d");
+const ParticleAnimation = () => {
+  const canvas = document.getElementById("canvas1");
+const ctx = canvas.getContext("2d", { willReadFrequently: true, });
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -130,3 +131,6 @@ function connect() {
         }
     }
 }
+};
+
+export default ParticleAnimation;

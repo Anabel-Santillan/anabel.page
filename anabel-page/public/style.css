@@ -1,17 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* body {
-    overflow: hidden;
-    background: black;
-    
-} */
+body {
+  overflow: hidden;
+  background: white;
+  font-family: "Roboto Mono";
+  margin: 0;
+}
+
+
+particleText {
+  display: flex;
+  justify-content: center;
+}
 
 canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+}
+
+.layer1 {
+  background-color: black;
+}
+
+.pg1text {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+}
+
+#pg1shortdesc{
+  font-size: 28px;
+}
+
+#pg1h1 {
+  margin-bottom: 10px;
+}
+
+.header-directory {
+  display: flex;
+  justify-content: space-between;
 }
